@@ -1,0 +1,29 @@
+.container {
+    flex-basis: 25%;
+}
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.title {
+    color: #D0D5DD;
+}
+
+.growth {
+    color: #00FF9E;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.stats {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}

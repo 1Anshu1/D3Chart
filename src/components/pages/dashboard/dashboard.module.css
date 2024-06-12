@@ -1,0 +1,11 @@
+.container {
+    background-color: black;
+    width: 80%;
+    /* padding: 16px; */
+}
+
+.chartContainer {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+}
