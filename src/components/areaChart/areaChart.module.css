@@ -1,5 +1,6 @@
 .container {
     flex-basis: 25%;
+    /* padding: 16px; */
 }
 .headerContainer {
     display: flex;
@@ -11,19 +12,31 @@
     color: #D0D5DD;
 }
 
+.arrowIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.growthContainer
+
 .growth {
     color: #00FF9E;
+    font-size: 14px;
 }
 
 .bottomContainer {
     display: flex;
     justify-content: space-between;
-    align-items: end;
-    margin-top: 20px;
+    align-items: baseline;
+    margin-top: 16px;
 }
 
 .stats {
     color: white;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+.path {
+    fill: rgba(0, 255, 158, 0.05);
 }

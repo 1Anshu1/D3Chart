@@ -1,5 +1,9 @@
-.title {
-    color: #D0D5DD;
-    padding: 10px 0;
-    /* text-align: left; */
+.container {
+    width: 40%;
+}
+
+.svgContainer {
+    max-width: 100%;
+    height: auto;
+    color: #98a2b3;
 }

@@ -1,6 +1,6 @@
 .container {
     background-color: black;
-    width: 80%;
+    width: 100vw;
     /* padding: 16px; */
 }
 
@@ -9,3 +9,4 @@
     gap: 16px;
     margin: 16px 0;
 }
+

@@ -1,3 +1,27 @@
 .container {
-    padding: 100px;
+    width: 60%;
+}
+
+.svgContainer {
+    max-width: 100%;
+    height: auto;
+    color: #98a2b3;
+    overflow: visible;
+}
+
+.tooltip {
+    fill: #ffffff;
+    color: red;
+    font-family: Georgia;
+    font-size: 150%;
+    position: absolute;
+}
+
+.title {
+    font-size: 16px;
+    fill: #d0d5dd;
+}
+
+.dot {
+    fill: #a363ff;
 }
