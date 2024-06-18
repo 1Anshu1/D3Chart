@@ -70,7 +70,7 @@ const MultilineChart = ({ callDurationData }) => {
             .attr("x", margin.left + 10)
             .attr("y", 0 - margin.top / 2)
             .attr("text-anchor", "middle")
-            .style("font-size", "16px")
+            .style("font-size", "14px")
             .style("fill", "white")
             .text("Call Duration");
 
@@ -83,7 +83,7 @@ const MultilineChart = ({ callDurationData }) => {
             .attr("x", 720)
             .attr("y", 0 - margin.top / 2)
             .text("Hold Time (min)")
-            .style("font-size", "15px")
+            .style("font-size", "14px")
             .style("fill", "white")
             .style("padding", "10px")
             .attr("alignment-baseline", "middle");
@@ -96,7 +96,7 @@ const MultilineChart = ({ callDurationData }) => {
             .attr("x", 870)
             .attr("y", 0 - margin.top / 2)
             .text("Talk Time")
-            .style("font-size", "15px")
+            .style("font-size", "14px")
             .style("fill", "white")
             .style("padding", "10px")
             .attr("alignment-baseline", "middle");

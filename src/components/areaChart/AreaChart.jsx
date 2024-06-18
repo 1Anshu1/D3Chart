@@ -27,7 +27,8 @@ const AreaChart = ({ data, title, stats, timeData, averageData }) => {
             .select(svgRef.current)
             .attr("width", width)
             .attr("height", height)
-            .style("overflow", "visible");
+            .style("overflow", "visible")
+            .attr("transform", `translate(${10},${10})`);
 
         // Declare the x scale.
         const xScale = d3
