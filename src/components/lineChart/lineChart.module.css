@@ -1,20 +1,18 @@
 .container {
-    width: 60%;
+    /* width: 60%; */
+    flex-basis: 60%;
 }
 
 .svgContainer {
     max-width: 100%;
     height: auto;
     color: #98a2b3;
-    overflow: visible;
-}
-
-.tooltip {
-    fill: #ffffff;
-    color: red;
-    font-family: Georgia;
-    font-size: 150%;
-    position: absolute;
+    /* overflow: visible; */
+    flex-basis: 60%;
+    background-color: #2e3033;
+    border: 1px solid #475467;
+    border-radius: 8px;
+    padding: 16px;
 }
 
 .title {
@@ -22,6 +20,15 @@
     fill: #d0d5dd;
 }
 
-.dot {
+/* .tooltip {
+    fill: #ffffff;
+    color: red;
+    font-family: Georgia;
+    font-size: 150%;
+    position: absolute;
+} */
+
+
+/* .dot {
     fill: #a363ff;
-}
+} */

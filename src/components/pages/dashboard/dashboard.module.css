@@ -1,7 +1,7 @@
 .container {
     background-color: black;
     width: 100vw;
-    /* padding: 16px; */
+    padding: 16px;
 }
 
 .chartContainer {
@@ -9,10 +9,3 @@
     gap: 16px;
     margin: 16px 0;
 }
-
-/* .doubleChart {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    column-gap: 16px;
-    margin-top: 16px;
-} */

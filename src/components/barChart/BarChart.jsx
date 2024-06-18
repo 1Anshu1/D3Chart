@@ -14,7 +14,7 @@ const BarChart = ({ handleTimeData, title }) => {
         const height = 250 - margin.top - margin.bottom;
         const svg = d3
             .select(svgRef.current)
-            .attr("width", "100%")
+
             .attr("height", height + margin.top + margin.bottom)
             .attr("viewBox", [0, 0, 400, 250])
             .attr("class", styles.svgContainer)
@@ -68,17 +68,18 @@ const BarChart = ({ handleTimeData, title }) => {
             .attr("x", -10)
             .attr("y", -20)
             .attr("text-anchor", "start")
-            .style("font-size", "16px")
-            .style("fill", "#D0D5DD")
+            .attr("class", styles.title)
             .text(`${title}`);
     }, [handleTimeData]);
 
     return (
-        <div className={styles.container}>
-            <ChartContainer>
-                <svg ref={svgRef} className={styles.svgContainer}></svg>
-            </ChartContainer>
-        </div>
+        <>
+            {/* <div className={styles.container}> */}
+            {/* <ChartContainer> */}
+            <svg ref={svgRef} preserveAspectRatio="none" className={styles.svgContainer}></svg>
+            {/* </ChartContainer> */}
+            {/* </div> */}
+        </>
     );
 };
 

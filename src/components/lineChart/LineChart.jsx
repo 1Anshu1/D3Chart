@@ -6,6 +6,7 @@ import styles from "./lineChart.module.css";
 
 const LineChart = ({ slaData, title }) => {
     const parseDate = d3.timeParse("%Y-%m");
+
     slaData = slaData?.map((data) => ({
         date: parseDate(data.date),
         sla: data.sla,
@@ -14,14 +15,14 @@ const LineChart = ({ slaData, title }) => {
     const svgRef = useRef();
 
     useEffect(() => {
-        const margin = { top: 40, right: 30, bottom: 20, left: 50 };
+        const margin = { top: 20, right: 30, bottom: 20, left: 50 };
         const width = 700 - margin.left - margin.right;
         const height = 250 - margin.top - margin.bottom;
 
         // setting the svg container
         const svg = d3
             .select(svgRef.current)
-            .attr("width", "100%")
+            .attr("width", width)
             .attr("height", height + margin.top + margin.bottom)
             .attr("viewBox", [0, 0, 700, 250])
             .attr("class", styles.svgContainer)
@@ -109,7 +110,7 @@ const LineChart = ({ slaData, title }) => {
                         .join("tspan")
                         .attr("x", 0)
                         .attr("y", (_, i) => `${i * 1.1}em`)
-                        // .attr("font-weight", (_, i) => (i ? null : "bold"))
+                        .attr("font-weight", (_, i) => (i ? null : "bold"))
                         .text((d) => d)
                 );
             size(text, path);
@@ -128,11 +129,13 @@ const LineChart = ({ slaData, title }) => {
     }, [slaData]);
 
     return (
-        <div className={styles.container}>
-            <ChartContainer>
+        <>
+        {/* <div className={styles.container}> */}
+            {/* <ChartContainer> */}
                 <svg ref={svgRef}></svg>
-            </ChartContainer>
-        </div>
+            {/* </ChartContainer> */}
+        {/* </div> */}
+        </>
     );
 };
 

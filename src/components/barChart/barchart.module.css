@@ -1,9 +1,20 @@
 .container {
-    width: 40%;
+    /* width: 40%; */
+    /* flex-basis: 40%; */
 }
 
 .svgContainer {
     max-width: 100%;
     height: auto;
     color: #98a2b3;
+    flex-basis: 40%;
+    background-color: #2e3033;
+    border: 1px solid #475467;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.title {
+    font-size: 14px;
+    fill: #d0d5dd;
 }

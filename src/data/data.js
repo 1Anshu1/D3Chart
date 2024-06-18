@@ -3,6 +3,9 @@ const handleTimeData = [
     { week: "Week 2", handleTime: 4.5 },
     { week: "Week 3", handleTime: 4.2 },
     { week: "Week 4", handleTime: 4.3 },
+    // { week: "Week 5", handleTime: 4.9 },
+    // { week: "Week 7", handleTime: 5 },
+    // { week: "Week 6", handleTime: 8.9 },
 ];
 
 // const callDurationData = [
@@ -29,6 +32,9 @@ const callDurationData = [
     { date: "Week 7", callTake: 2.2, callHold: 1.0 },
     { date: "Week 8", callTake: 2.2, callHold: 1.0 },
     { date: "Week 9", callTake: 2.2, callHold: 1.0 },
+    { date: "Week 10", callTake: 2.2, callHold: 4.0 },
+    { date: "Week 11", callTake: 2.2, callHold: 3.0 },
+    { date: "Week 12", callTake: 2.2, callHold: 2.0 },
 ];
 
 const slaData = [
