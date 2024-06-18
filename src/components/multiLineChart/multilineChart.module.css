@@ -1,6 +1,9 @@
-.container {
+.svgContainer {
     max-width: 100%;
     height: auto;
     color: #98a2b3;
-    font-size: 12px;
+    background-color: #2e3033;
+    border: 1px solid #475467;
+    border-radius: 8px;
+    padding: 16px;
 }

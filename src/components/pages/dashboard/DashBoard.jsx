@@ -15,7 +15,7 @@ const DashBoard = () => {
                 <AreaChart data={data} title={"Call Waiting"} timeData={200} />
                 <AreaChart data={data} title={"Average Score"} averageData={84} />
             </div>
-            <MultilineChart callDurationData={callDurationData} />
+            <MultilineChart callDurationData={callDurationData} title={"Call Duration"}/>
             <div className={styles.chartContainer}>
                 <LineChart slaData={slaData} title={"Service Level Agreement"}/>
                 <BarChart handleTimeData={handleTimeData} title={"Average Handle Time"} />

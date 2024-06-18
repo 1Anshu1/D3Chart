@@ -15,22 +15,19 @@ const LineChart = ({ slaData, title }) => {
     const svgRef = useRef();
 
     useEffect(() => {
-        const margin = { top: 20, right: 30, bottom: 20, left: 50 };
+        const margin = { top: 20, right: 40, bottom: 20, left: 50 };
         const width = 700 - margin.left - margin.right;
         const height = 250 - margin.top - margin.bottom;
 
         // setting the svg container
         const svg = d3
             .select(svgRef.current)
-            .attr("width", width)
-            .attr("height", height + margin.top + margin.bottom)
+            // .attr("width", width)
+            // .attr("height", height + margin.top + margin.bottom)
             .attr("viewBox", [0, 0, 700, 250])
             .attr("class", styles.svgContainer)
             .append("g")
-            .attr("transform", `translate(${margin.left},${margin.top})`)
-            .on("pointerenter pointermove", pointermoved)
-            .on("pointerleave", pointerleft)
-            .on("touchstart", (event) => event.preventDefault());
+            .attr("transform", `translate(${margin.left},${margin.top})`);
 
         // setting the scales
         const x = d3
@@ -47,7 +44,7 @@ const LineChart = ({ slaData, title }) => {
         // setting the axis
         svg.append("g")
             .attr("transform", `translate(0,${height})`)
-            .call(d3.axisBottom(x).tickSize(0).tickPadding(10).tickFormat(d3.timeFormat("%V")))
+            .call(d3.axisBottom(x).tickSize(0).tickPadding(10).tickFormat(d3.timeFormat("%I")))
             .call((g) => g.select(".domain").remove());
 
         svg.append("g")
@@ -74,7 +71,10 @@ const LineChart = ({ slaData, title }) => {
             .attr("fill", "none")
             .attr("stroke", "#A363FF")
             .attr("stroke-width", 2)
-            .attr("d", line);
+            .attr("d", line)
+            .on("pointerenter pointermove", pointermoved)
+            .on("pointerleave", pointerleft)
+            .on("touchstart", (event) => event.preventDefault());
 
         const tooltip = svg.append("g");
 
@@ -96,8 +96,8 @@ const LineChart = ({ slaData, title }) => {
                 .selectAll("path")
                 .data([,])
                 .join("path")
-                .attr("fill", "white")
-                .attr("stroke", "black");
+                .style("fill", "#383a3d")
+                .style("fill-opacity", ".5");
 
             const text = tooltip
                 .selectAll("text")
@@ -111,6 +111,7 @@ const LineChart = ({ slaData, title }) => {
                         .attr("x", 0)
                         .attr("y", (_, i) => `${i * 1.1}em`)
                         .attr("font-weight", (_, i) => (i ? null : "bold"))
+                        .attr("fill", "white")
                         .text((d) => d)
                 );
             size(text, path);
@@ -130,11 +131,11 @@ const LineChart = ({ slaData, title }) => {
 
     return (
         <>
-        {/* <div className={styles.container}> */}
+            {/* <div className={styles.container}> */}
             {/* <ChartContainer> */}
-                <svg ref={svgRef}></svg>
+            <svg ref={svgRef}></svg>
             {/* </ChartContainer> */}
-        {/* </div> */}
+            {/* </div> */}
         </>
     );
 };

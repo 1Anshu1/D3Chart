@@ -8,34 +8,35 @@ const handleTimeData = [
     // { week: "Week 6", handleTime: 8.9 },
 ];
 
-// const callDurationData = [
-//     { date: "2020-01", callTake: 3.2, callHold: 1.0 },
-//     { date: "2020-02", callTake: 2.2, callHold: 2.0 },
-//     { date: "2020-03", callTake: 1.2, callHold: 3.0 },
-//     { date: "2020-04", callTake: 4.2, callHold: 1.0 },
-//     { date: "2020-05", callTake: 6.2, callHold: 1.0 },
-//     { date: "2020-06", callTake: 2.2, callHold: 1.0 },
-//     { date: "2020-07", callTake: 3.6, callHold: 2.0 },
-//     { date: "2020-08", callTake: 3.2, callHold: 3.0 },
-//     { date: "2020-09", callTake: 5.2, callHold: 3.8 },
-//     { date: "2020-10", callTake: 2.2, callHold: 1.9 },
-//     { date: "2020-11", callTake: 1.2, callHold: 3.5 },
-//     { date: "2020-12", callTake: 9.2, callHold: 2.8 },
-// ];
 const callDurationData = [
-    { date: "Week 1", callTake: 3.2, callHold: 1.0 },
-    { date: "Week 2", callTake: 2.2, callHold: 2.0 },
-    { date: "Week 3", callTake: 1.2, callHold: 3.0 },
-    { date: "Week 4", callTake: 4.2, callHold: 1.0 },
-    { date: "Week 5", callTake: 6.2, callHold: 1.0 },
-    { date: "Week 6", callTake: 2.2, callHold: 1.0 },
-    { date: "Week 7", callTake: 2.2, callHold: 1.0 },
-    { date: "Week 8", callTake: 2.2, callHold: 1.0 },
-    { date: "Week 9", callTake: 2.2, callHold: 1.0 },
-    { date: "Week 10", callTake: 2.2, callHold: 4.0 },
-    { date: "Week 11", callTake: 2.2, callHold: 3.0 },
-    { date: "Week 12", callTake: 2.2, callHold: 2.0 },
+    { date: "2020-01", talkTime: 1.2, holdTime: 1.0 },
+    { date: "2020-02", talkTime: 2.2, holdTime: 2.0 },
+    { date: "2020-03", talkTime: 3.2, holdTime: 3.0 },
+    { date: "2020-04", talkTime: 4.2, holdTime: 1.0 },
+    { date: "2020-05", talkTime: 5.2, holdTime: 1.0 },
+    { date: "2020-06", talkTime: 6.2, holdTime: 1.0 },
+    { date: "2020-07", talkTime: 7.6, holdTime: 2.0 },
+    { date: "2020-08", talkTime: 6.2, holdTime: 3.0 },
+    { date: "2020-09", talkTime: 4.2, holdTime: 3.8 },
+    { date: "2020-10", talkTime: 3.2, holdTime: 1.9 },
+    { date: "2020-11", talkTime: 2.2, holdTime: 3.5 },
+    { date: "2020-12", talkTime: 9.2, holdTime: 2.8 },
 ];
+
+// const callDurationData = [
+//     { date: "Week 1", callTake: 3.2, callHold: 1.0 },
+//     { date: "Week 2", callTake: 2.2, callHold: 2.0 },
+//     { date: "Week 3", callTake: 1.2, callHold: 3.0 },
+//     { date: "Week 4", callTake: 4.2, callHold: 1.0 },
+//     { date: "Week 5", callTake: 6.2, callHold: 1.0 },
+//     { date: "Week 6", callTake: 2.2, callHold: 1.0 },
+//     { date: "Week 7", callTake: 2.2, callHold: 1.0 },
+//     { date: "Week 8", callTake: 2.2, callHold: 1.0 },
+//     { date: "Week 9", callTake: 2.2, callHold: 1.0 },
+//     { date: "Week 10", callTake: 2.2, callHold: 4.0 },
+//     { date: "Week 11", callTake: 2.2, callHold: 3.0 },
+//     { date: "Week 12", callTake: 2.2, callHold: 2.0 },
+// ];
 
 const slaData = [
     { date: "2020-01", sla: 32 },
