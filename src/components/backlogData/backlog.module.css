@@ -1,31 +1,27 @@
-.svgContainer {
-    /* max-width: 100%;
-    color: #98a2b3;
+.container {
     background-color: #2e3033;
-    border: 1px solid #475467;
     border-radius: 8px;
-    padding: 16px; */
-    background-color: rgb(28, 0, 87);
+    padding: 24px;
+    width: 100%;
+    margin-bottom: 16px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    background-color: green;
 }
 
 .title {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: #d0d5dd;
-    line-height: 24px;
+    line-height: 30px;
 }
 
 .legendContainer {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 8px;
 }
 
 .legend {
@@ -44,22 +40,25 @@
     font-size: 14px;
     color: #ffffff;
     line-height: 20px;
+    font-weight: 500;
 }
 
-.htCircle {
+.received {
+    background-color: #98eece;
+}
+
+.sent {
+    background-color: #d7bbff;
+}
+
+.dailyBacklog {
     background-color: #a363ff;
 }
 
-.ttCircle {
+.netBacklog {
     background-color: #00ff9e;
 }
 
-.container {
+.svgContainer {
     color: #98a2b3;
-    background-color: #2e3033;
-    border: 1px solid #475467;
-    border-radius: 8px;
-    padding: 16px;
-    /* width: 100%; */
-    background-color: red;
 }

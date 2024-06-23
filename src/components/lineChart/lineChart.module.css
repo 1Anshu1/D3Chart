@@ -1,33 +1,30 @@
 .container {
-    /* width: 60%; */
-    flex-basis: 60%;
-}
-
-.svgContainer {
-    max-width: 100%;
-    height: auto;
-    color: #98a2b3;
-    /* overflow: visible; */
     flex-basis: 60%;
     background-color: #2e3033;
     border: 1px solid #475467;
     border-radius: 8px;
-    padding: 16px;
+    padding: 24px;
+}
+
+.svgContainer {
+    color: #98a2b3;
+    /* line-height: 20px; */
+    font-size: 12px;
+    /* background-color: red; */
+    /* overflow: visible;  */
 }
 
 .title {
     font-size: 16px;
-    fill: #d0d5dd;
+    line-height: 24px;
+    font-weight: 600;
+    color: #d0d5dd;
 }
 
-/* .tooltip {
-    fill: #ffffff;
-    color: red;
-    font-family: Georgia;
-    font-size: 150%;
-    position: absolute;
-} */
-
+.tooltip {
+    fill: #383a3d;
+    fill-opacity: 0.95;
+}
 
 /* .dot {
     fill: #a363ff;

@@ -1,0 +1,29 @@
+.container {
+    background-color: #2e3033;
+    border: 1px solid #475467;
+    border-radius: 8px;
+    padding: 24px;
+    flex-basis: 50%;
+}
+
+.title {
+    color: #d0d5dd;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.barLabel {
+    fill: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.barValue {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    fill: #98a2b3;
+}

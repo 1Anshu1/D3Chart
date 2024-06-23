@@ -11,3 +11,14 @@
     width: calc(100% - 48px);
     color: #383a3d;
 }
+
+.heatMapContainer {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.bargraphContainer {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
