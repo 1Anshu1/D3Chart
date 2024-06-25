@@ -3,15 +3,15 @@
     border: 1px solid #475467;
     border-radius: 8px;
     padding: 16px;
-    /* flex-basis: calc(33% - 16px); */
-    background-color: green;
+    flex-basis: calc(33% - 16px);
 }
 
 .title {
     font-weight: 600;
     font-size: 16px;
     color: #d0d5dd;
-    line-height: 600;
+    line-height: 24px;
+    margin-bottom: 16px;
 }
 
 .boldText {

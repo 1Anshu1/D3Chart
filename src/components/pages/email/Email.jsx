@@ -52,18 +52,48 @@ const Email = () => {
                     height={250}
                 />
             </div>
-            {/* <div className={styles.agentAnalysisContainer}>
+            <div className={styles.agentAnalysisContainer}>
                 <div className={styles.title}>Agent Analysis </div>
                 <div className={styles.bt}>
                     <AnalysisContainer title={"Avg Response Time"} time={200} incrementData={12} />
-                    <AnalysisContainer title={"Avg Response Time"} time={200} incrementData={12} />
-                    <AnalysisContainer title={"Avg Response Time"} time={200} incrementData={12} />
-                    <AnalysisContainer title={"Avg Response Time"} time={200} incrementData={12} />
-                    <AnalysisContainer title={"Avg Response Time"} time={200} incrementData={12} />
-                    <AnalysisContainer title={"Avg Response Time"} time={200} incrementData={12} />
-                    <AnalysisContainer title={"Avg Response Time"} time={200} incrementData={12} />
+                    <AnalysisContainer
+                        title={"Avh First Response Time"}
+                        value={2420}
+                        incrementData={12}
+                    />
+                    <AnalysisContainer
+                        title={"Quickest Response Time"}
+                        value={2420}
+                        incrementData={12}
+                    />
+                    <AnalysisContainer
+                        title={"First Email Resolution"}
+                        time={200}
+                        incrementData={12}
+                    />
+                    <AnalysisContainer
+                        title={"Agent Utilisation"}
+                        value={2420}
+                        incrementData={12}
+                    />
+                    <AnalysisContainer
+                        title={"Security Policy Compliance"}
+                        value={2420}
+                        incrementData={12}
+                    />
+                    <AnalysisContainer title={"Empathy Score"} time={200} incrementData={12} />
+                    <AnalysisContainer
+                        title={"Writing Skills Score"}
+                        value={2420}
+                        incrementData={12}
+                    />
+                    <AnalysisContainer
+                        title={"Comprehension Score"}
+                        value={2420}
+                        incrementData={12}
+                    />
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 };

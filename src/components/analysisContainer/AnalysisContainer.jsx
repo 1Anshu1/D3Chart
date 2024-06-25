@@ -11,13 +11,14 @@ const AnalysisContainer = ({ title, value, time, incrementData }) => {
     };
 
     return (
-        <div >
-            <h1 className={styles.title}>title</h1>
+        <div className={styles.miniContainer}>
+            <div className={styles.title}>{title}</div>
             <div className="">
-                <span className={styles.boldText}>{value}</span>
-                {value && <span className={styles.boldText}>{value.toLocaleString("en-IN")}</span>}
-                {time && <span className={styles.boldText}>{formatTime(time)}</span>}
                 <span className={styles.arrowContainer}>
+                    {value && (
+                        <span className={styles.boldText}>{value.toLocaleString("en-IN")}</span>
+                    )}
+                    {time && <span className={styles.boldText}>{formatTime(time)}</span>}
                     <img src={arrow} alt="arrow" className={styles.arrow} />
                     <span className={styles.greenText}>{incrementData}%</span>
                 </span>
