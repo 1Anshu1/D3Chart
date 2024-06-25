@@ -8,10 +8,7 @@
 
 .svgContainer {
     color: #98a2b3;
-    /* line-height: 20px; */
     font-size: 12px;
-    /* background-color: red; */
-    /* overflow: visible;  */
 }
 
 .title {
@@ -22,10 +19,18 @@
 }
 
 .tooltip {
-    fill: #383a3d;
-    fill-opacity: 0.95;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    max-width: 200px;
+    height: auto;
+    padding: 5px;
+    background-color: #00000050;
+    border-radius: 5px;
+    font-size: 12px;
+    visibility: hidden;
 }
 
-/* .dot {
+.dot {
     fill: #a363ff;
-} */
+}

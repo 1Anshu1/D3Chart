@@ -19,15 +19,15 @@ const handleTimeData = [
 ];
 
 const callDurationData = [
-    { date: "2020-01", talkTime: 1.2, holdTime: 1.0 },
+    { date: "2020-01", talkTime: 44.2, holdTime: 1.0 },
     { date: "2020-02", talkTime: 2.2, holdTime: 2.0 },
-    { date: "2020-03", talkTime: 3.2, holdTime: 3.0 },
+    { date: "2020-03", talkTime: 5.2, holdTime: 3.0 },
     { date: "2020-04", talkTime: 4.2, holdTime: 1.0 },
     { date: "2020-05", talkTime: 5.2, holdTime: 1.0 },
     { date: "2020-06", talkTime: 6.2, holdTime: 1.0 },
     { date: "2020-07", talkTime: 7.6, holdTime: 2.0 },
     { date: "2020-08", talkTime: 6.2, holdTime: 3.0 },
-    { date: "2020-09", talkTime: 4.2, holdTime: 3.8 },
+    { date: "2020-09", talkTime: 8.2, holdTime: 3.8 },
     { date: "2020-10", talkTime: 3.2, holdTime: 1.9 },
     { date: "2020-11", talkTime: 2.2, holdTime: 3.5 },
     { date: "2020-12", talkTime: 9.2, holdTime: 0.5 },
@@ -35,13 +35,8 @@ const callDurationData = [
 
 const slaData = [
     { date: "2020-01-01", sla: 30 },
-    { date: "2020-01-05", sla: 35 },
-    { date: "2020-01-12", sla: 33 },
-    { date: "2020-01-23", sla: 38 },
-    { date: "2020-01-28", sla: 37 },
-    { date: "2020-01-30", sla: 45 },
     { date: "2020-02-01", sla: 30 },
-    { date: "2020-03-01", sla: 150 },
+    { date: "2020-03-01", sla: 100 },
     { date: "2020-04-01", sla: 43 },
     { date: "2020-05-01", sla: 46 },
     { date: "2020-06-01", sla: 40 },
@@ -54,18 +49,12 @@ const slaData = [
 ];
 
 const data = [
-    { month: "Jan", call: 0 },
-    { month: "Feb", call: 35 },
-    { month: "Mar", call: 52 },
-    { month: "Apr", call: 43 },
-    { month: "May", call: 46 },
-    { month: "Jun", call: 40 },
-    { month: "Jul", call: 48 },
-    { month: "Aug", call: 59 },
-    { month: "Sep", call: 66 },
-    { month: "Oct", call: 60 },
-    { month: "Nov", call: 79 },
-    { month: "Dec", call: 80 },
+    { date: "2020-01-01", value: 0 },
+    { date: "2020-01-05", value: 5 },
+    { date: "2020-01-12", value: 10 },
+    { date: "2020-01-28", value: 12 },
+    { date: "2020-01-23", value: 9 },
+    { date: "2020-01-30", value: 23 },
 ];
 
 const backlogData = [
@@ -126,7 +115,7 @@ const priorityData = [
     // { date: "2024-06-15", params: "<20", data: 100 },
     // { date: "2024-06-14", params: "<20", data: 200 },
 
-    { date: "2024-06-23", params: "20-39", data: 200 },
+    { date: "2024-06-23", params: "20-39", data: 1000 },
     { date: "2024-06-22", params: "20-39", data: 100 },
     { date: "2024-06-21", params: "20-39", data: 300 },
     { date: "2024-06-20", params: "20-39", data: 520 },
@@ -155,6 +144,17 @@ const priorityData = [
     { date: "2024-06-19", params: "60-79", data: 150 },
     { date: "2024-06-18", params: "60-79", data: 200 },
     { date: "2024-06-17", params: "60-79", data: 130 },
+    // { date: "2024-06-16", params: "60-79", data: 140 },
+    // { date: "2024-06-15", params: "60-79", data: 100 },
+    // { date: "2024-06-14", params: "60-79", data: 200 },
+
+    { date: "2024-06-23", params: "80-99", data: 100 },
+    { date: "2024-06-22", params: "80-99", data: 100 },
+    { date: "2024-06-21", params: "80-99", data: 200 },
+    { date: "2024-06-20", params: "80-99", data: 150 },
+    { date: "2024-06-19", params: "80-99", data: 150 },
+    { date: "2024-06-18", params: "80-99", data: 200 },
+    { date: "2024-06-17", params: "80-99", data: 130 },
     // { date: "2024-06-16", params: "60-79", data: 140 },
     // { date: "2024-06-15", params: "60-79", data: 100 },
     // { date: "2024-06-14", params: "60-79", data: 200 },

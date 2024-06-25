@@ -17,3 +17,13 @@
     color: #98a2b3;
     fill: #d0d5dd;
 }
+
+.tooltip {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background: #00000050;
+}

@@ -7,7 +7,12 @@
 .chartContainer {
     display: flex;
     gap: 16px;
-    /* margin: 16px 0;  */
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.twoChartContainer {
+    display: flex;
+    gap: 16px;
     width: calc(100% - 48px);
-    color: #383a3d;
 }

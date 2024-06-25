@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import * as d3 from "d3";
 import styles from "./backlog.module.css";
 
-const BacklogData = ({ backlogData, title, legendColor }) => {
+const BacklogData = ({ backlogData, title, legendColor, legend }) => {
     const svgContainer = useRef(null);
     const svgRef = useRef(null);
 
@@ -131,22 +131,15 @@ const BacklogData = ({ backlogData, title, legendColor }) => {
             <div className={styles.header}>
                 <div className={styles.title}>{title}</div>
                 <div className={styles.legendContainer}>
-                    <span className={styles.legend}>
-                        <div className={`${styles.circle} ${styles.received}`}></div>
-                        <div className={styles.label}>Received</div>
-                    </span>
-                    <span className={styles.legend}>
-                        <div className={`${styles.circle} ${styles.sent}`}></div>
-                        <div className={styles.label}>Sent</div>
-                    </span>{" "}
-                    <span className={styles.legend}>
-                        <div className={`${styles.circle} ${styles.dailyBacklog}`}></div>
-                        <div className={styles.label}>Daily Backlog</div>
-                    </span>{" "}
-                    <span className={styles.legend}>
-                        <div className={`${styles.circle} ${styles.netBacklog}`}></div>
-                        <div className={styles.label}>Net Backlog</div>
-                    </span>
+                    {legend?.map((item, idx) => (
+                        <span key={item} className={styles.legend}>
+                            <div
+                                className={`${styles.circle}`}
+                                style={{ backgroundColor: legendColor[idx] }}
+                            ></div>
+                            <div className={styles.label}>{item}</div>
+                        </span>
+                    ))}
                 </div>
             </div>
             <svg ref={svgRef} className={styles.svgContainer} />

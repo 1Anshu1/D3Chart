@@ -1,6 +1,9 @@
 .container {
     flex-basis: 25%;
-    /* padding: 16px; */
+    background-color: #2e3033;
+    border: 1px solid #475467;
+    border-radius: 8px;
+    padding: 16px;
 }
 .headerContainer {
     display: flex;
@@ -9,7 +12,10 @@
 }
 
 .title {
-    color: #D0D5DD;
+    color: #d0d5dd;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
 }
 
 .arrowIcon {
@@ -17,10 +23,13 @@
     height: 20px;
 }
 
-.growthContainer
-
+.growthContainer {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
 .growth {
-    color: #00FF9E;
+    color: #00ff9e;
     font-size: 14px;
 }
 
@@ -34,9 +43,16 @@
 .stats {
     color: white;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 24px;
+    line-height: 32px;
 }
 
-.path {
-    fill: rgba(0, 255, 158, 0.05);
+.tooltip {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background: #00000050;
 }

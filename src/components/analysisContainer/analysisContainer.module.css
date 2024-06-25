@@ -1,0 +1,40 @@
+.miniContainer {
+    background-color: #48494b;
+    border: 1px solid #475467;
+    border-radius: 8px;
+    padding: 16px;
+    /* flex-basis: calc(33% - 16px); */
+    background-color: green;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #d0d5dd;
+    line-height: 600;
+}
+
+.boldText {
+    color: white;
+    font-weight: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.arrowContainer {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.greenText {
+    font-size: 14px;
+    line-height: 20px;
+    color: #00ff9e;
+    font-weight: 500;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+}

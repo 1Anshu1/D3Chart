@@ -3,7 +3,7 @@
     border-radius: 8px;
     padding: 24px;
     width: 100%;
-    margin-bottom: 16px;
+    flex-basis: 50%;
 }
 
 .header {
@@ -41,22 +41,6 @@
     color: #ffffff;
     line-height: 20px;
     font-weight: 500;
-}
-
-.received {
-    background-color: #98eece;
-}
-
-.sent {
-    background-color: #d7bbff;
-}
-
-.dailyBacklog {
-    background-color: #a363ff;
-}
-
-.netBacklog {
-    background-color: #00ff9e;
 }
 
 .svgContainer {

@@ -1,29 +1,18 @@
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
 export const useResize = (targetRef) => {
-    console.log(targetRef.current);
-    const getSize = () => {
-        return {
-            width: targetRef.current ? targetRef.current.offsetWidth : 0,
-            height: targetRef.current ? targetRef.current.offsetHeight : 0,
-        };
+    const [width, setWidth] = useState();
+
+    const getSvgContainerSize = () => {
+        const newWidth = targetRef.current.offsetWidth - 48;
+        setWidth(newWidth);
     };
-
-    const [dimensions, setDimensions] = useState(getSize);
-
-    const handleResize = () => {
-        setDimensions(getSize());
-    };
-
     useEffect(() => {
-        window.addEventListener("resize", handleResize);
-        // handleResize();
-        return () => window.removeEventListener("resize", handleResize);
+        getSvgContainerSize();
+        window.addEventListener("resize", getSvgContainerSize);
+        // cleanup event listener
+        return () => window.removeEventListener("resize", getSvgContainerSize);
     }, []);
 
-    useLayoutEffect(() => {
-        handleResize();
-    }, []);
-
-    return dimensions;
+    return width;
 };
