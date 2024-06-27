@@ -5,8 +5,8 @@ import Email from "./components/pages/email/Email";
 const App = () => {
     return (
         <div>
-            {/* <DashBoard /> */}
-            <Email />
+            <DashBoard />
+            {/* <Email /> */}
         </div>
     );
 };
